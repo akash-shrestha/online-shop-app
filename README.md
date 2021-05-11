@@ -1,5 +1,5 @@
 # online-shop-web-app
-Simple online shop web app made using node, express and ejs
+Simple online shop web app made using node, express, mongodb and ejs
 
 Getting started </br>
 
