@@ -21,6 +21,7 @@
                 <button id="order-btn" class="btn">ORDER</button>
                 <script src="https://js.stripe.com/v3/"></script>
                 <script>
+                    // Stripe publishable key here
                     var stripe = Stripe('pk_test_51HKzqaHWr9vjQft0Xw3ANxPZH944bJgFx1ytfqgDIjvPBhqcMKhAYkBWF5X9cmCbdyvwCTXWg2QV7sm3xGG5u13u00VAhntAx1');
                     var orderBtn = document.getElementById('order-btn');
                     orderBtn.addEventListener('click', function() {

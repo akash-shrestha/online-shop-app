@@ -6,6 +6,7 @@ const MongoDBStore = require('connect-mongodb-session')(session);         //for 
 const csrf = require('csurf');
 const flash = require('connect-flash');                                   //for attatching message on every incoming new req for showing error message
 const multer = require('multer');                                         //for multi-part form data
+require('dotenv').config();
 
 const path = require('path');
 
@@ -16,10 +17,7 @@ const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 const authRoutes = require('./routes/auth');
 
-
-const MONGODB_URI =
-  '*mongodb uri here*';
-
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const app = express();
 
