@@ -4,6 +4,7 @@ Stripe for online payment and Sendgrid for mailing service are used as 3rd party
 
 Getting started </br>
 
+-Clone the folder </br>
 -Run 'npm install' </br>
 -Rename the '.env-sample' file present on the root directory to '.env' </br>
 -Open the .env file and insert your database connection key(mongoDB atlas), payement partner key(stripe), mailing service provider key(sendgrid) in the .env file
