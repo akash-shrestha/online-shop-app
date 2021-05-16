@@ -1,6 +1,7 @@
 # online-shop-web-app
 Simple online shop web app made using node, express, mongodb(mongoose) and ejs </br>
-Stripe for online payment and Sendgrid for mailing service are used as 3rd party services
+Stripe for online payment and Sendgrid for mailing service are used as 3rd party services </br>
+The app is a basic version and I will adding more features whenever I can manage time </br>
 
 Getting started </br>
 
@@ -11,4 +12,4 @@ Getting started </br>
   and save the file
 </br>
 -Run 'npm start'   </br>
--Visit 'http://localhost:3000/'
+-Visit 'http://localhost:3000/' or the configured address
