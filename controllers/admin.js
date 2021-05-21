@@ -7,7 +7,6 @@ const { validationResult } = require('express-validator/check');
 const Product = require('../models/product');
 
 exports.getAddProduct = (req, res, next) => {
-  console.log('getAddProduct middleware from admin executed !');
   res.render('admin/edit-product', {
     pageTitle: 'Add Product',
     path: '/admin/add-product',
@@ -19,7 +18,6 @@ exports.getAddProduct = (req, res, next) => {
 };
 
 exports.postAddProduct = (req, res, next) => {
-  console.log('getAddProduct middleware from admin executed !');
   const title = req.body.title;
   const image = req.file;
   const price = req.body.price;
