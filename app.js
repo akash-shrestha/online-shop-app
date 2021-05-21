@@ -119,12 +119,14 @@ app.use((error, req, res, next) => {
   });
 });
 
+const PORT = process.env.PORT || 3000;
+
 mongoose
   .connect(MONGODB_URI)
   .then(result => {
     console.log('Connected to the database server !');
-    app.listen(process.env.PORT || 3000);
-    console.log('Server is listening for incoming requests at port 3000 !');
+    app.listen(PORT);
+    console.log(`Server is listening for incoming requests at port ${PORT} !`);
   })
   .catch(err => {
     console.log(err);
