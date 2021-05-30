@@ -1,7 +1,8 @@
 # online-shop-web-app
 Simple online shop web app made using node, express, mongodb(mongoose) and ejs </br>
 Stripe for online payment and Sendgrid for mailing service are used as 3rd party services </br>
-The app is in its basic version and I will adding more features whenever I can manage time </br>
+
+The app is in its basic version and I will adding more remaining features whenever I can manage time </br>
 
 Getting started </br>
 
