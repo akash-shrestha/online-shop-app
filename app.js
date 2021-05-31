@@ -7,6 +7,7 @@ const csrf = require('csurf');
 const flash = require('connect-flash');                                   //for attatching message on every incoming new req for showing error message
 const multer = require('multer');                                         //for multi-part form data
 require('dotenv').config();
+const helmet = require('helmet');
 
 const path = require('path');
 
@@ -53,6 +54,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');                                        //not needed if the default view folder ie 'views' is used
 
 
+app.use(helmet());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -131,3 +133,5 @@ mongoose
   .catch(err => {
     console.log(err);
   });
+
+  console.log(process.env.NODE_ENV);
